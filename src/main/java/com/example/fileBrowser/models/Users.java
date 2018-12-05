@@ -19,7 +19,7 @@ public class Users {
     @OneToMany(mappedBy = "user")
     private List<Folders> folder;
 
-    public Users(String name, List<Folders> folder) {
+    public Users(String name) {
         this.name = name;
         this.folder = new ArrayList<>();
     }
